@@ -27,6 +27,7 @@ public class FileManager {
 	public FileManager(final String ruta){
 		this.setRuta(ruta);
 		this.archivo = new File(ruta);
+		concat = new Concatenador();
 		leyendo = false;
 		escribiendo = false;
 		extensionActual = getExtension();
@@ -42,7 +43,6 @@ public class FileManager {
 		}else{
 			System.out.println("Integridad correcta: Iniciando.");
 			explorador = new JFileChooser(ruta);
-			concat = new Concatenador();
 		}
 	}
 	

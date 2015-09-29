@@ -6,8 +6,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		FileManager fm = new FileManager("C:\\Users\\tomov\\Desktop\\prueba.txt");
-		//fm.explorarRuta();
+		FileManager fm = new FileManager("/");
+		fm.explorarRuta();
 		fm.abrirScanner();
 		
 		while(fm.hasNext()){
